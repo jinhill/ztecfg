@@ -26,5 +26,6 @@ Options:
   -c  cfg type (only used to pack into cfg. default: 2)
   -d  defcfg type (only used to pack into cfg. default: 0)
 </code></pre>
+g7615 key path:/tagparam/paramtag
 FYI:https://www.right.com.cn/forum/thread-8394902-1-2.html
 
