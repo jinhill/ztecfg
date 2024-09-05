@@ -26,6 +26,12 @@ Options:
   -c  cfg type (only used to pack into cfg. default: 2)
   -d  defcfg type (only used to pack into cfg. default: 0)
 </code></pre>
-g7615 key path:/tagparam/paramtag
+
+ZTE G7615 key path:/tagparam/paramtag, download to local dir.
+
+<pre><code>
+key=$(strings ./paramtag | grep -oE  '\w{32}' | head -n1)
+./zxcfg -i conf/db_user_cfg.xml -o cfg.txt -k "${key}"
+</code></pre>
 FYI:https://www.right.com.cn/forum/thread-8394902-1-2.html
 
