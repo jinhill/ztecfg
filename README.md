@@ -26,3 +26,5 @@ Options:
   -c  cfg type (only used to pack into cfg. default: 2)
   -d  defcfg type (only used to pack into cfg. default: 0)
 </code></pre>
+FYI:https://www.right.com.cn/forum/thread-8394902-1-2.html
+
