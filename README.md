@@ -30,8 +30,12 @@ Options:
 ZTE G7615 key path:/tagparam/paramtag, download to local dir.
 
 <pre><code>
+#/bin/sh
 key=$(strings ./paramtag | grep -oE  '\w{32}' | head -n1)
-./zxcfg -i conf/db_user_cfg.xml -o cfg.txt -k "${key}"
+#unpackage and decrypt
+./ztecfg -i ./db_user_cfg.xml -o ./cfg.txt -k "${key}"
+#encrypt and package
+#./ztecfg -i ./cfg.txt -o ./db_user_cfg-new.xml -m 1 -t 2 -k "${key}"
 </code></pre>
 FYI:https://www.right.com.cn/forum/thread-8394902-1-2.html
 
